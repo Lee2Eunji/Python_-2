@@ -2,7 +2,6 @@ List = []
 for x in range(1, 16):
     num = int(x)
     List.append(num)
-    print(List)
 if range == 14:
     print(List)
 
@@ -17,5 +16,5 @@ if i == i * 3:
 
 print(List.pop(1))
 List.insert(1, 2)
-List.extend("3")
+List.insert("3")
 List.sort()
