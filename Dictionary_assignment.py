@@ -1,17 +1,18 @@
 Dic = {}
-x = int
-while x:
-    Dic.get(int(input("정수를 입력해 주세요.: ")))
-    if Dic == 0:
+
+while True: 
+    key = int(input("키를 입력해 주세요.: "))
+    value = input("value를 입력해 주세요.: ")
+    if((key == 0) or (value == "종료")):
         print("그만")
         print(Dic)
         break
-    Dic.get(str(input("문자를 입력해 주세요.: ")))
-    if Dic == "문자열 종료":
-        print("그만")
-        print(Dic)
-    break
+    else:
+        Dic[key] = value
 
-print(list(Dic.keys()))
-print(list(Dic.values()))
-print(list(Dic.items()))
+key_list = list(Dic.keys())
+value_list = list(Dic.values())
+item_list = list(Dic.items())
+print(key_list)
+print(value_list)
+print(item_list)
